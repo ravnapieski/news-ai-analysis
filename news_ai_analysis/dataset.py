@@ -4,7 +4,7 @@ from loguru import logger
 from tqdm import tqdm
 import typer
 
-from news-ai-analysis.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
+from news_ai_analysis.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
 
 app = typer.Typer()
 
