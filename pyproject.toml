@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "news-ai-analysis"
+version = "0.0.1"
+description = "This project analyzes AI trends in Finnish news media."
+authors = [
+  { name = "Hans Ravna-Pieski" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "~=3.10.0"
+
+
+[tool.ruff]
+line-length = 99
+src = ["news-ai-analysis"]
+include = ["pyproject.toml", "news-ai-analysis/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["news-ai-analysis"]
+force-sort-within-sections = true
+
