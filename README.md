@@ -66,7 +66,8 @@ This project analyzes AI trends in Finnish news media.
 - **Tool**: finnish-media-scrapers
 - **Target**: Yle news articles containing the keyword tekoäly from the past five years.
 - **Commands**:
-  fms-query-yle -q "tekoäly" -f2020-11-01 -t 2025-10-31 -o yle-tekoaly.csv
+
+        fms-query-yle -q "tekoäly" -f2020-11-01 -t 2025-10-31 -o yle-tekoaly.csv
 
         fms-fetch-open -i yle-tekoaly.csv -o yle-tekoaly
 
